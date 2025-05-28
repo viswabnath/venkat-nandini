@@ -1,4 +1,4 @@
-echo "# Venkat & Nandini Wedding Invitation
+# Venkat & Nandini Wedding Invitation
 
 Welcome to the official wedding invitation website of Naga Venkateswara Rao and Nandini. This project is a beautiful, responsive web invitation designed to share our special day with family and friends.
 
@@ -39,9 +39,4 @@ This is a personal project and not open for contributions, but thank you for you
 
 This project is for personal use only.
 
----
 
-With love and joy,  
-Naga Venkateswara Rao & Nandini  
-🕉️ సర్వే భవంతు సుఖినః 🕉️
-" > README.md
