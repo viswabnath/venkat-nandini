@@ -1,42 +1,104 @@
-# Venkat & Nandini Wedding Invitation
+Got it! Here’s a **clean, properly formatted Markdown file** exactly as you can use it in your `README.md` for the `netlify` branch:
 
-Welcome to the official wedding invitation website of Naga Venkateswara Rao and Nandini. This project is a beautiful, responsive web invitation designed to share our special day with family and friends.
+````markdown
+# 🎉 Venkat & Nandini Wedding Invitation – Netlify Deployment
 
-## Features
+This is the **Netlify-hosted version** of the wedding invitation website for **Naga Venkateswara Rao and Nandini**. It includes a **visitor counter** powered by **Upstash Redis** using **Netlify Functions**.
 
-- Elegant invitation card with floral design elements
-- Countdown timer to the wedding date
-- Information about wedding ceremony and reception
-- Personalized messages and quotes
-- Mobile-friendly and accessible layout
+---
 
-## Technologies Used
+## 💡 What’s New in This Branch
 
-- HTML5
-- CSS3
-- JavaScript (for countdown timer)
-- Hosted on GitHub Pages
+- ✅ Deployed to **Netlify**  
+- ✅ Serverless function to count page visits  
+- ✅ Uses **Upstash Redis** for backend storage  
+- ✅ Visitor count shown on the frontend  
 
-## How to View
+---
 
-You can view the live site here:  
-[https://viswabnath.github.io/venkat-nandini/](https://viswabnath.github.io/venkat-nandini/)
+## 🚀 Technologies Used
 
-## How to Run Locally
+- HTML5, CSS3, JavaScript  
+- **Netlify Functions** (serverless backend)  
+- **Upstash Redis** (cloud key-value store)  
+- Hosted on **Netlify**
 
-1. Clone the repository:  
-   \`\`\`bash
+---
+
+## 🔗 Live Site
+
+> [https://your-netlify-site.netlify.app](https://your-netlify-site.netlify.app)  
+> _(Replace with your actual Netlify URL)_
+
+---
+
+## 🛠️ Running Locally
+
+1. **Clone the repo & switch to this branch:**
+
+   ```bash
    git clone https://github.com/viswabnath/venkat-nandini.git
-   \`\`\`
-2. Open the folder in your favorite code editor (e.g., VS Code).
-3. Open the \`index.html\` file in a web browser.
+   cd venkat-nandini
+   git checkout netlify
+````
 
-## Contributions
+2. **Install dependencies (for functions):**
 
-This is a personal project and not open for contributions, but thank you for your interest!
+   ```bash
+   npm install
+   ```
 
-## License
+3. **Add a `.env` file in the root:**
+
+   ```env
+   UPSTASH_REDIS_REST_URL=https://your-db.upstash.io
+   UPSTASH_REDIS_REST_TOKEN=your-secret-token
+   ```
+
+4. **Start Netlify dev server:**
+
+   ```bash
+   npx netlify dev
+   ```
+
+---
+
+## 🧪 Folder Structure
+
+```
+netlify/functions/
+└── visitor-counter.js    # Netlify Function to count visitors
+
+.env                      # Your Upstash Redis credentials
+index.html                # Main webpage
+README.md                 # This file (only in netlify branch)
+```
+
+---
+
+## 👀 Visitor Counter
+
+The visitor count is updated every time someone opens the site.
+It is powered by a simple Redis key in Upstash and incremented server-side using a Netlify Function.
+
+---
+
+## 🛡️ Security
+
+* Your Redis token is never exposed to the browser.
+* Only the serverless function accesses it securely via environment variables.
+
+---
+
+## 🔒 License
 
 This project is for personal use only.
 
+```
 
+---
+
+You can **copy-paste this as-is** into your `README.md` in the `netlify` branch.
+
+If you want, I can also help you create a script or workflow to handle branch-specific README files automatically!
+```

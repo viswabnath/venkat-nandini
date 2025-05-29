@@ -632,7 +632,9 @@
         <div class="credits">
             Designed with <span class="heart">❤️</span> for #Venkat&Nandini by <a href="https://onemark.co.in"
                 target="_blank" style="color: rgb(0, 157, 255);">Onemark</a>
+                <p>This page has been visited <span id="visitor-count">...</span> times!</p>
         </div>
+        
     </div>
 
     <script>
@@ -748,6 +750,18 @@
                 });
             });
         });
+
+         async function fetchVisitorCount() {
+    try {
+      const res = await fetch('/.netlify/functions/visitor-counter');
+      const data = await res.json();
+      document.getElementById('visitor-count').textContent = data.count || 'a few';
+    } catch (err) {
+      console.error('Visitor count fetch failed:', err);
+      document.getElementById('visitor-count').textContent = 'a few';
+    }
+  }
+  fetchVisitorCount();
     </script>
 </body>
 
