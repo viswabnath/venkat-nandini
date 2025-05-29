@@ -26,8 +26,8 @@ This is the **Netlify-hosted version** of the wedding invitation website for **N
 
 ## 🔗 Live Site
 
-> [https://your-netlify-site.netlify.app](https://your-netlify-site.netlify.app)  
-> _(Replace with your actual Netlify URL)_
+> [https://venkat-nandini.netlify.app/](https://venkat-nandini.netlify.app/)  
+
 
 ---
 
