@@ -1,4 +1,3 @@
-Got it! Here’s a **clean, properly formatted Markdown file** exactly as you can use it in your `README.md` for the `netlify` branch:
 
 ````markdown
 # 🎉 Venkat & Nandini Wedding Invitation – Netlify Deployment
@@ -96,9 +95,4 @@ This project is for personal use only.
 
 ```
 
----
 
-You can **copy-paste this as-is** into your `README.md` in the `netlify` branch.
-
-If you want, I can also help you create a script or workflow to handle branch-specific README files automatically!
-```
